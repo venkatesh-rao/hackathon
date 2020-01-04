@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
-import Greetings from '../../containers/Greetings/Greetings';
 import './Popup.css';
 
 class Popup extends Component {
+  componentDidMount() {
+    if (chrome.runtime.openOptionsPage) {
+      chrome.runtime.openOptionsPage();
+    } else {
+      window.open(chrome.runtime.getURL('option.html'));
+    }
+  }
+
   render() {
-    return (
-      <div>
-        <h1>This is the Popup Window</h1>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <Greetings />
-        </div>
-      </div>
-    );
+    return null;
   }
 }
 
