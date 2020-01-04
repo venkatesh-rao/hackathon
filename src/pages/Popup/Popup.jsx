@@ -3,10 +3,11 @@ import './Popup.css';
 
 class Popup extends Component {
   componentDidMount() {
+    console.log('hi');
     if (chrome.runtime.openOptionsPage) {
       chrome.runtime.openOptionsPage();
     } else {
-      window.open(chrome.runtime.getURL('option.html'));
+      window.open(chrome.runtime.getURL('options.html'));
     }
   }
 

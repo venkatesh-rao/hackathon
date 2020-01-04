@@ -1,8 +1,7 @@
 import '../../assets/img/icon-34.png';
 import '../../assets/img/icon-128.png';
-import axios from 'axios';
 
-console.log(document.getElementsByTagName('body'));
+// console.log(document.getElementsByTagName('body'));
 
 // chrome.tabs.onActivated.addListener((activeInfo) => {
 //   chrome.tabs.get(activeInfo.tabId, (info) => {

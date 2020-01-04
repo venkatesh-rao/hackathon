@@ -11,6 +11,7 @@
     "activeTab",
     "tabs",
     "history",
+    "storage",
     "idle",
     "webNavigation",
     "*://*/*"
@@ -32,5 +33,5 @@
     "icon-34.png"
   ],
   "manifest_version": 2,
-  "content_security_policy": "script-src script-src-elem 'self' 'unsafe-inline'; object-src 'self'"
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
