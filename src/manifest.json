@@ -1,5 +1,5 @@
 {
-  "name": "Chrome Extension with React & Webpack",
+  "name": "Earnest Stats",
   "background": {
     "page": "background.html"
   },
